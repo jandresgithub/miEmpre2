@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Mi Empresa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    <!-- Animate.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>Mi Empresa Idenmatica</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('about') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('services') }}">Servicios</a></li>
+                <li><a href="{{ url_for('news') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contact') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2024 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- AOS JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <script>
+        AOS.init({
+            duration: 1200,
+        });
+     </script>
+</body>
+</html>

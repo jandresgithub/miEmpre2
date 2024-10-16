@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<section class="homepage">
+    <div>
+        <!-- Agregar Logo -->
+         <img src="{{ url_for('static', filename = 'images/logo_idenmatica.jpg')}}" alt="Logo de la Empresa" class="company-logo">
+    </div>
+    <h2>Bienvenidos a Mi Empresa Idenmatica</h2>
+    <p>Ofrecemos los mejores servicios para mejorar tu vida.</p>
+    <!--Botón de la red social ficticia-->
+    <a href="https://www.ficticiasocial.com/miempresa" target="_blank">
+        <button class="animate__animated animate__pulse">Siguenos en un red Ficticia Social</button>
+    </a>
+    <!-- Aquí puedes agregar más contenido como testimonios, botones, etc. -->
+</section>
+{% endblock %}

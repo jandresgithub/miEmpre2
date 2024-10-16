@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block content %}
+<section>
+    <h2 data-aos="fade-up">Nuestros Servicios</h2>
+    <div data-aos="fade-up" data-aos-delay="200" class="animate__animated animate__bounce">
+        <img src="{{ url_for('static', filename='images/imagen10.jpg') }}" alt="Servicio 1">
+        <p>Servicios de seguridad informática para proteger los datos de los clientes
+            como auditorias de seguridad, implementaciones de firewall y soluciones de incriptación
+        </p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="400" class="animate__animated animate__bounce">
+        <img src="{{ url_for('static', filename='images/imagen9.jpg') }}" alt="Servicio 2">
+        <p>Descripción del Servicio 2</p>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Noticias{% endblock %}
+
+{% block content %}
+<section class="news">
+    <h2 data-aos="fade-up">Últimas Noticias</h2>
+    <div>
+        <h3>Operativo Zombi: Como actuaba el hacker de San Cristobal</h3>
+        <p>Descripción breve de la noticia.</p>
+    </div>
+    <div class="news-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="{{ url_for('static', filename='images/imagen3.jpg') }}" alt="Noticia 1">
+        <p>Inauguración de nuestra nueva sede en la ciudad.</p>
+    </div>
+    <div class="news-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="{{ url_for('static', filename='images/imagen4.png') }}" alt="Noticia 2">
+        <p>Participación en la conferencia internacional de tecnología.</p>
+    </div>
+    <div class="news-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="{{ url_for('static', filename='images/imagen2.jpg') }}" alt="Noticia 3">
+        <p>Desarrollo de una nueva plataforma digital para nuestros clientes.</p>
+    </div>
+    <!-- Repetir para más noticias -->
+</section>
+{% endblock %}

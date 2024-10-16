@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Quiénes Somos{% endblock %}
+
+{% block content %}
+<section class="about-us">
+    <h2 data-aos="fade-up">Quiénes Somos</h2>
+    <p data-aos="fade-up">Somos una empresa dedicada a brindar soluciones innovadoras.</p>
+    <h3>Misión</h3>
+    <p data-aos="fade-up" data-aos-delay="300">En Idenmatica, nuestra misión es proporcionar soluciones tecnológicas innovadoras y personalizadas que empoderen a las empresas para optimizar sus procesos, mejorar su productividad y alcanzar sus objetivos."</p>
+    <h3>Visión</h3>
+    <P data-aos="fade-up" data-aos-delay="300">Ser reconocidos como líderes en el desarrollo de soluciones tecnológicas integrales y creativas, impulsando la transformación digital en empresas de todos los tamaños y sectores.</P>
+    <!-- Más contenido sobre la empresa -->    
+    <div class="team">
+        <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{ url_for('static', filename='images/keatu.jpg') }}" alt="Miembro del equipo 1">
+            <p>Juan Pérez - CEO</p>
+        </div>
+        <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{ url_for('static', filename='images/victoriaVillarruel.jpg') }}" alt="Miembro del equipo 2">
+            <p>María Gómez - CTO</p>
+        </div>
+        <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+            <img src="{{ url_for('static', filename='images/ken_jeong.jpg') }}" alt="Miembro del equipo 3">
+            <p>Carlos López - CMO</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
